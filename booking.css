@@ -8,7 +8,7 @@
     margin: 20px auto 60px auto;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
 }
-.book-form{
+.book-form form{
    background-color: beige;
    border: 1px solid plum;
    border-radius: 15px;
@@ -18,9 +18,10 @@
    gap: 25px 30px;  
 }
 .form{
+
     display: flex;
     flex-direction: column;
-
+    
 }
 .form .full-width{
     grid-column: span 2;
@@ -75,17 +76,17 @@ textarea:hover{
    cursor: pointer;
 }
 .submit-btn {
-   grid-column: span 2;
-   background-color: #0077b6;
-   color: white;
-   border: none;
-   padding: 15px;
-   border-radius: 8px;
-   font-size: 16px;
-   font-weight: 600;
-   cursor: pointer;
-   margin-top: 10px;
-   width: 200%;
+  grid-column: span 2;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%; 
    
 
    
