@@ -1,4 +1,97 @@
-.hero-section{
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   overflow-x: hidden;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0b3954;
+}
+
+.logo img {
+   border-radius: 50%;
+    height: 90px;
+    object-fit: cover;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: #0077b6;
+    transition: 0.3s;
+}
+
+.book-btn {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    padding: 15px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+   
+}
+
+.book-btn:hover {
+    background-color: #005f92;
+     transition: 0.3s;
+}
+footer {
+  background-color: #0b132b;
+  color: white;
+  padding: 30px 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  text-align: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 35px; 
+}
+.footer-links a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.social-icons i {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
      url(img/bannar2.jpg) center/cover no-repeat;
     height: 250px;
@@ -13,7 +106,7 @@
     margin-bottom: 8px;
     font-weight: 700;
 }
-.hero-content h1:hover{
+.hero-content h1:hover {
     transition: 2s ease;
     color: #5babdc;
 }
@@ -22,7 +115,8 @@
     font-size: 16px;
     opacity: 0.9;
 }
-.book{
+
+.book {
     background-color: rgb(247, 245, 245);
     padding: 40px;
     border-radius: 12px;
@@ -30,31 +124,36 @@
     margin: 20px auto 60px auto;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
 }
-.book-form form{
-   background-color: beige;
-   border: 1px solid plum;
+
+.book-form {
+   background-color: rgb(248, 248, 247);
+   border: 1px solid rgb(255, 254, 255);
    border-radius: 15px;
    padding: 20px;
-   display:grid;
-   grid-template-columns: 1fr 1fr;
-   gap: 25px 30px;  
+   display: grid;
+   grid-template-columns: 1fr 1fr; 
+   gap: 20px 30px;  
 }
-.form{
 
-    display: flex;
-    flex-direction: column;
-    
+
+.form {
+  display: flex;
+  flex-direction: column;
 }
-.form .full-width{
+
+
+.full-width,
+.submit-btn {
     grid-column: span 2;
-    
 }
-label{
-    font-size: 20px;
+
+label {
+    font-size: 18px;
     font-weight: 600;
     color: rgb(0, 0, 0);
-    margin: 0 8px 0 9px;
+    margin-bottom: 8px;
 }
+
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -69,36 +168,41 @@ textarea {
   font-size: 14px;
   color: #4a5568;
   outline: none;
+  box-sizing: border-box;
   transition: all 0.3s ease;
 }
+
 input:hover,
 select:hover,
-textarea:hover{
-     border-color:#0077b6;  
+textarea:hover {
+     border-color: #0077b6;  
 }
-.form-radio{
+
+.form-radio {
     display: flex;
     align-items: center;
     gap: 20px;
-    height: 50px;
+    height: 45px;
 }
-.radio{
+
+.radio {
     display: flex;
     align-items: center;
-    gap:8px;
+    gap: 8px;
     cursor: pointer;
     font-size: 15px;
     font-weight: 500;
     color: #4a5568;
 }
+
 .radio input[type="radio"] {
    accent-color: #0077b6;
    width: 18px;
    height: 18px;
    cursor: pointer;
 }
+
 .submit-btn {
-  grid-column: span 2;
     background-color: #0077b6;
     color: white;
     border: none;
@@ -109,11 +213,9 @@ textarea:hover{
     cursor: pointer;
     margin-top: 10px;
     width: 100%; 
-   
-
-   
 }
- .submit-btn:hover {
+
+.submit-btn:hover {
    background-color: #005f92;
    transition: background-color 0.3s;
 }
