@@ -1,8 +1,30 @@
+.hero-section{
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+     url(img/bannar2.jpg) center/cover no-repeat;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+.hero-content h1:hover{
+    transition: 2s ease;
+    color: #5babdc;
+}
+
+.hero-content p {
+    font-size: 16px;
+    opacity: 0.9;
+}
 .book{
-    background-color: darkgrey;
-   
+    background-color: rgb(247, 245, 245);
     padding: 40px;
-   
     border-radius: 12px;
     max-width: 900px;
     margin: 20px auto 60px auto;
